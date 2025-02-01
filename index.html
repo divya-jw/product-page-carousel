@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details Page</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+
+<body onload="initial()">
+    <section class="header">
+
+        <nav>
+            <i class="fas fa-home"></i>
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-shopping-cart"></i>
+        </nav>
+    </section>
+    <!-- desktop banner -->
+    <section class="desktopBanner">
+        <header>
+  
+            <nav>
+                <ul>
+                    <li><a href="#">Buy</a></li>
+                    <li><a href="#">Sell</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">List</a></li>
+                    <li><a href="#">Best Sellers</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Customer Care</a></li>
+                    <li><a href="#">Register</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <script src="./assets/js/main.js"></script>
+
+
+    </section>
+
+    <!-- tablet banner -->
+    <section class="tabBanner">
+
+        <header>
+            <nav>
+           
+                <ul>
+                    <li><a href="#">Buy</a></li>
+                    <li><a href="#">Sell</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">List</a></li>
+                    <li><a href="#">Best Sellers</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Customer Care</a></li>
+                    <li><a href="#">Register</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+    </section>
+
+    <!-- mobile banner -->
+
+    <section class="mobBanner">
+
+        <header>
+    
+            <nav>
+                <ul>
+                    <li><a href="#">Buy</a></li>
+                    <li><a href="#">Sell</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">List</a></li>
+                    <li><a href="#">Best Sellers</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Customer Care</a></li>
+                    <li><a href="#">Register</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    </section>
+
+    <section class="row">
+
+        <section class="col-6">
+            <section>
+                <div class="carousel-container">
+               
+                    <div class="main-image-container">
+                        <img id="main-image" class="main-image" src="" alt="Main Image">
+                    </div>
+
+                    <!-- Thumbnails section -->
+                    <div class="thumbnails-row">
+                        <button class="carousel-button left" onclick="previous()">&#9664;</button>
+                        <div id="thumbnails-container" class="thumbnails-container">
+                        </div>
+                        <button class="carousel-button right" onclick="next()">&#9654;</button>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="col-6">
+
+            <section class="info">
+                <div class="product-container">
+                    <h2>Product Name</h2>
+                    <p class="price">$29.99</p>
+                    <p class="description">This is a brief product description. It explains the features of the product, its quality, and why it's worth buying.</p>
+
+                    <div class="variant-selector">
+                        <label for="size">Size: </label>
+                        <select id="size">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+            
+                    <div class="quantity-selector">
+                        <label for="quantity">Quantity: </label>
+                        <input type="number" id="quantity" value="1" min="1" />
+                    </div>
+            
+                    <button class="btn" onclick="addToCart()">Add to Cart</button>
+
+                    <div id="confirmation-message" class="confirmation-message">
+                        Product added to cart successfully!
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+
+
+    <footer>
+        <p>@ 2025 Carousal All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>

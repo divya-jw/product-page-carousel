@@ -1,0 +1,123 @@
+@media(min-width:769px) and (max-width:1024px){
+    .desktopBanner,.mobBanner{
+        display:none;
+    }
+
+    .tabBanner{
+        display:block;
+        position: relative;
+        overflow:hidden;
+    }
+
+    .tabBanner>header{
+        width: 100%;
+        background-color: rgba(25, 44, 81, 0.877);
+    }
+    .tabBanner>header>nav{
+        text-align: center;
+
+    }
+    .tabBanner>header>nav>ul{
+        list-style-type:none;
+    }
+        
+    .tabBanner>header>nav>ul>li{
+        padding:20px;
+        display:inline-block;}
+
+
+
+    .tabBanner>header>nav>ul>li:hover{
+        background-color: rgb(11, 15, 43);
+        color:white;
+        text-shadow: 2px 2px 2px black;}
+
+    .tabBanner>header>nav>ul>li>a{
+        color:white;
+        text-decoration: none;    
+    }
+    
+    .tabBanner>h1{
+        color:white;
+        font-variant: small-caps;
+        position: absolute;
+        top:400px;
+        left:250px;
+        font-size:30px;
+        padding: 10px;
+        text-shadow: 10px 10px 10px black;
+    }
+    .tabBanner>video{
+        width:100%;
+    }
+
+    .carousel-container {
+        width: 100%;
+        position: relative;
+        padding-top: 20px;
+    }
+
+    .lastpara{
+        display:none;
+    }
+}
+
+@media(max-width:768px){
+    .desktopBanner,.tabBanner{
+        display:none;
+    }
+    .mobBanner{
+        display:block;
+        position: relative;
+        overflow:hidden
+    }
+    .mobBanner>header>center>img{
+        width:300px;
+    }
+    .mobBanner>header{
+        width: 100%;
+        background-color: rgba(25, 44, 81, 0.877);
+    }
+    .mobBanner>header>nav{
+        text-align:center;
+    }
+    .mobBanner>header>nav>ul{
+        list-style-type: none;
+        padding:10px;
+    }
+    .mobBanner>header>nav>ul>li>a{
+        text-decoration: none;
+        color:rgb(255, 254, 254);
+        font-size:15px;
+        font-variant: small-caps; 
+    }
+    .mobBanner>header>nav>ul>li{
+        padding:7px;
+    }
+    .mobBanner>header>nav>ul>li:hover{
+        background:rgb(42, 38, 101);
+    }
+    .mobBanner>header>nav>ul>li>a:hover{
+        color:blanchedalmond;
+    }
+    .mobBanner>header>h1{
+        color:rgb(21, 53, 110);
+        text-align: center;
+        font-variant: small-caps;
+        font-size:20px;
+    }
+
+    .carousel-container {
+        width: 100%;
+        position: relative;
+        padding-top: 20px;
+        padding-right: 15%;
+    }
+    .info {
+        padding-left: 52px;
+    }
+
+    [class*="col-"]{
+        width:100%;
+    }
+}
